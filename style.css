@@ -12,11 +12,37 @@ header{
     width: 103px;
     height: 103px;
     margin-left: 5%;
+    display: flex;
 }
 
 .menu_icon{
     
-
+    position: relative;
+    margin-left: 230px;
+    margin-top: 14%;
+    width: 32px;
+    height: 30px;
+    
     
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(22, 22, 22, 1);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
 
