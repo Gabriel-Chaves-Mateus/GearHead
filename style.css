@@ -46,3 +46,25 @@ ul {
     text-decoration: none;
   }
 
+  .motoInicial{
+    margin: 0px;
+    margin-top: 28px;
+    height: 390px;
+    width: 390px;
+  }
+  .botaoInicial{
+    font-size: 22px;
+    background-color: #ff6600;
+    color: #ffff;
+    height: 42px;
+    width: 129px;
+    margin-left: 250px;
+    margin-top: -10px;
+    
+  }
+  .h1imagem{
+    justify-content: center;
+    text-align: end;
+    font-size: 27px;
+    margin-right: 10px;
+  }
