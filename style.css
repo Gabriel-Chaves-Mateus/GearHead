@@ -15,16 +15,48 @@ header{
     display: flex;
 }
 
-.menu_icon{
+  /*----------Menu_mobile----------*/
+  .menu_icon{
     
-    position: relative;
-    margin-left: 160px;
-    margin-top: 13%;
-    width: 32px;
-    height: 30px;
-    
-    
-}
+      position: relative;
+      margin-left: 160px;
+      margin-top: 13%;
+      width: 32px;
+      height: 30px;
+  }
+
+  .menu_body{
+      background-color: rgba(22, 22, 22, 1);
+  }
+
+  .menu_lista ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .menu_lista li a {
+    display: block;
+    color: #535151;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .menu_lista li a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .menu_lista li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  /*----------Menu_mobile----------*/  
 
 ul {
     list-style-type: none;
