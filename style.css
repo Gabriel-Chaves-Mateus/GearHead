@@ -3,26 +3,33 @@ body{
 }
 
 header{
+    position: relative;
     background-color: rgba(22, 22, 22, 1);
-    border: none;
     height: 103px;
 }
+
+
 
 .logo {
     width: 103px;
     height: 103px;
-    margin-left: 5%;
+    margin-left: 0%;
     display: flex;
+    position: absolute;
 }
 
   /*----------Menu_mobile----------*/
+
+
   .menu_icon{
     
-      position: relative;
-      margin-right: 5%;
-      margin-top: 13%;
+      position: absolute;
+      margin-left: 70%;
+      margin-top: 20px;
       width: 32px;
       height: 30px;
+      padding: 0px 0px;
+      display: flex;
   }
 
   .menu_body{
