@@ -15,50 +15,16 @@ header{
     display: flex;
 }
 
-
-  /*-----------Menu_mobile------------*/
-  .menu_icon{
-      
-      margin-left: 160px;
-      margin-top: 12%;
-      width: 32px;
-      height: 30px;
-      padding: 0px 0px;
-      
-  }
-
-  .menu_body{
-      background-color: rgba(22, 22, 22, 1);
-  }
-
-  .menu_list ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
-  
-  .menu_list li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-  }
-  
-  .menu_list li a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-  .menu_list li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
-  /*-----------Menu_mobile-----------*/
-
+.menu_icon{
+    
+    position: relative;
+    margin-left: 160px;
+    margin-top: 13%;
+    width: 32px;
+    height: 30px;
+    
+    
+}
 
 ul {
     list-style-type: none;
