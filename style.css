@@ -48,9 +48,10 @@ ul {
 
   .motoInicial{
     margin: 0px;
-    margin-top: 28px;
-    height: 390px;
-    width: 390px;
+    margin-top: 0%;
+    height: 150%;
+    width: 125%;
+    position: relative;
   }
   .botaoInicial{
     font-size: 22px;
@@ -58,13 +59,29 @@ ul {
     color: #ffff;
     height: 42px;
     width: 129px;
+    margin-left: 57%;
+    margin-top: -1%;
+    position: absolute;
+    font-family: sans-serif;
+  }
+ .botaoInicial:hover{
+    font-size: 22px;
+    background-color: #414141;
+    color: #ff6600;
+    height: 42px;
+    width: 129px;
     margin-left: 250px;
     margin-top: -10px;
-    
+    position: absolute;
+    font-family: sans-serif;
   }
   .h1imagem{
     justify-content: center;
     text-align: end;
-    font-size: 27px;
-    margin-right: 10px;
+    font-size: 180%;
+    margin-right: 5%;
+    position: relative;
+    margin-top: -40%;
+    
+    color: #ffff;
   }
