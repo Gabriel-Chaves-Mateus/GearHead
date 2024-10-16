@@ -6,6 +6,12 @@ header{
     background-color: rgba(22, 22, 22, 1);
     border: none;
     height: 103px;
+    display: inline;
+}
+
+.foto_main{
+  position: relative;
+  
 }
 
 .logo {
@@ -18,12 +24,11 @@ header{
 .menu_icon{
     
     position: relative;
-    margin-left: 200px;
-    margin-top: 14%;
+    margin-left: 620%;
+    margin-top: 165%;
     width: 32px;
     height: 32px;
-    
-    
+
 }
 
 ul {
@@ -70,8 +75,8 @@ ul {
     color: #ff6600;
     height: 42px;
     width: 129px;
-    margin-left: 250px;
-    margin-top: -10px;
+    margin-left: 57%;
+    margin-top: -1%;
     position: absolute;
     font-family: sans-serif;
   }
@@ -82,6 +87,6 @@ ul {
     margin-right: 5%;
     position: relative;
     margin-top: -40%;
-    
     color: #ffff;
+    margin-left: 25%;
   }
