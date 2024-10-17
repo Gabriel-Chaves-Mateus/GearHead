@@ -97,11 +97,10 @@ ul {
       color: #ffff;
       height: 42px;
       width: 129px;
-      margin-right: 5%;
-      margin-left: 73%;
+      margin-right: 7%;
+      margin-left: 68%;
       margin-top: -15%;
       position: absolute;
-
       font-family: "Righteous",sans-serif;
       font-style: normal;
     }
@@ -111,8 +110,8 @@ ul {
       color: #ff6600;
       height: 42px;
       width: 129px;
-      margin-right: 5%;
-      margin-left: 59%;
+      margin-right: 7%;
+      margin-left: 68%;
       margin-top: -15%;
       position: absolute;
       font-family: "Righteous",sans-serif;
@@ -144,14 +143,15 @@ ul {
     .botaoInicial{
       background-color: #ff6600;
       color: #ffff;
-      height: 42px;
-      width: 129px;
+      height: 52px;
+      width: 149px;
       margin-right: 5%;
-      margin-left: 73%;
+      margin-left: 69%;
       margin-top: -15%;
       position: absolute;
       font-family: "Righteous",sans-serif;
       font-style: normal;
+      font-size: 26px;
     }
    .botaoInicial:hover{
       font-size: 20px;
