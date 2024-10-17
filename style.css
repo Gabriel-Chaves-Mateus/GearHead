@@ -9,11 +9,6 @@ header{
     display: inline;
 }
 
-.foto_main{
-  position: relative;
-  
-}
-
 .logo {
     width: 103px;
     height: 103px;
@@ -64,29 +59,170 @@ ul {
     color: #ffff;
     height: 42px;
     width: 129px;
-    margin-left: 57%;
-    margin-top: -1%;
+    margin-right: 5%;
+    margin-left: 63%;
+    margin-top: -15%;
     position: absolute;
-    font-family: sans-serif;
+    font-family: "Righteous",sans-serif;
+    font-style: normal;
   }
  .botaoInicial:hover{
-    font-size: 22px;
+    font-size: 20px;
     background-color: #414141;
     color: #ff6600;
     height: 42px;
     width: 129px;
-    margin-left: 57%;
-    margin-top: -1%;
+    margin-right: 5%;
+    margin-left: 59%;
+    margin-top: -15%;
     position: absolute;
-    font-family: sans-serif;
+    font-family: "Righteous",sans-serif;
+    font-style: normal;
   }
   .h1imagem{
-    justify-content: center;
     text-align: end;
-    font-size: 180%;
+    font-size: 155%;
     margin-right: 5%;
-    position: relative;
+    position: absolute;
     margin-top: -40%;
     color: #ffff;
-    margin-left: 25%;
+    margin-left: 23%;
+    font-family: 'Righteous', sans-serif;
+    font-weight: lighter;
+  }
+
+  @media(min-width:476px){
+    .botaoInicial{
+      background-color: #ff6600;
+      color: #ffff;
+      height: 42px;
+      width: 129px;
+      margin-right: 5%;
+      margin-left: 73%;
+      margin-top: -15%;
+      position: absolute;
+
+      font-family: "Righteous",sans-serif;
+      font-style: normal;
+    }
+   .botaoInicial:hover{
+      font-size: 20px;
+      background-color: #414141;
+      color: #ff6600;
+      height: 42px;
+      width: 129px;
+      margin-right: 5%;
+      margin-left: 59%;
+      margin-top: -15%;
+      position: absolute;
+      font-family: "Righteous",sans-serif;
+      font-style: normal;
+    }
+    .h1imagem{
+    
+      text-align: right;
+      font-size: 190%;
+      margin-right: 5%;
+      position: absolute;
+      margin-top: -40%;
+      color: #ffff;
+      margin-left: 20%;
+      font-family: 'Righteous', sans-serif;
+      font-weight: 10;
+    }
+
+
+  }
+  @media(min-width:586px){
+    .motoInicial{
+      margin: 0px;
+      margin-top: 0%;
+      height: 150%;
+      width: 125%;
+      position: relative;
+    }
+    .botaoInicial{
+      background-color: #ff6600;
+      color: #ffff;
+      height: 42px;
+      width: 129px;
+      margin-right: 5%;
+      margin-left: 73%;
+      margin-top: -15%;
+      position: absolute;
+      font-family: "Righteous",sans-serif;
+      font-style: normal;
+    }
+   .botaoInicial:hover{
+      font-size: 20px;
+      background-color: #414141;
+      color: #ff6600;
+      height: 42px;
+      width: 129px;
+      margin-right: 5%;
+      margin-left: 59%;
+      margin-top: -15%;
+      position: absolute;
+      font-family: "Righteous",sans-serif;
+      font-style: normal;
+    }
+    .h1imagem{
+    
+      text-align: right;
+      font-size: 200%;
+      margin-right: 5%;
+      position: absolute;
+      margin-top: -40%;
+      color: #ffff;
+      margin-left: 20%;
+      font-family: 'Righteous', sans-serif;
+      font-weight: 10;
+    }
+
+  }
+
+  @media(min-width:727px){
+    .motoInicial{
+      margin: 0px;
+      margin-top: 0%;
+      height: 150%;
+      width: 125%;
+      position: relative;
+    }
+    .botaoInicial{
+      background-color: #ff6600;
+      color: #ffff;
+      height: 42px;
+      width: 129px;
+      margin-left: 59%;
+      margin-top: -15%;
+      position: absolute;
+      font-family: "Righteous",sans-serif;
+      font-style: italic;
+    }
+   .botaoInicial:hover{
+      font-size: 20px;
+      background-color: #414141;
+      color: #ff6600;
+      height: 42px;
+      width: 129px;
+      margin-left: 59%;
+      margin-top: -15%;
+      position: absolute;
+      font-family: "Righteous",sans-serif;
+      font-style: normal;
+    }
+    .h1imagem{
+    
+      text-align: right;
+      font-size: 260%;
+      margin-right: 5%;
+      position: absolute;
+      margin-top: -40%;
+      color: #ffff;
+      margin-left: 27%;
+      font-family: 'Righteous', sans-serif;
+      font-weight: 10;
+    }
+
   }
