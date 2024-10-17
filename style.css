@@ -8,8 +8,6 @@ header{
     height: 103px;
 }
 
-
-
 .logo {
     width: 103px;
     height: 103px;
@@ -18,9 +16,55 @@ header{
     position: absolute;
 }
 
+.menu_icon{
+    display: none;
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 35px;
+    width: 32px;
+    height: 30px;
+    padding: 0px 0px;
+}
+
+/*---------Menu mobile----------*/
+
+@media (max-width: 834px) {
+  .links {
+      display: none; /* Esconde o menu inicialmente */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      background-color: white;
+  }
+
+  .links.active {
+      display: flex; /* Exibe o menu quando ativado */
+  }
+
+  .menu_icon {
+      display: block; /* Exibe o ícone de menu sanduíche */
+      
+  }
+
+  ul {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+  }
+
+  ul li {
+      margin: 20px 0;
+  }
+}
+
+
   /*----------Menu_mobile----------*/
+/*
 
-
+  @media screen and (max-width:812px) {
+    
   .menu_icon{
     
       position: absolute;
@@ -32,30 +76,33 @@ header{
       display: flex;
   }
 
+
   .menu_body{
       background-color: rgba(22, 22, 22, 1);
   }
 
   .menu_lista ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0%;
     padding: 0;
-    background-color: rgba(22, 22, 22, 1);
-    width: 100%;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+    position: relative;
+    overflow:hidden;
+  }
+
+  .menu_lista li{
+    width:100%;
   }
   
   .menu_lista li a {
-    margin-top: 12%;
+    margin-top: 15%;
     border: #555;
     border-style:double;
-    width: 390px;
+    border-left: 0;
+    border-right: 0;
+    height:80px;
     margin: 0%;
     display: block;
     color: #e9e2e2;
-    padding: 20px 30px;
     text-decoration: none;
     text-align: justify;
     font-size: 25px;
@@ -70,11 +117,16 @@ header{
     background-color: #555;
     color: white;
   }
+
+  }
+*/
   /*----------Menu_mobile----------*/  
 
-ul {
+  
+  ul {
     list-style-type: none;
     margin: 0;
+    margin-left: 30%;
     padding: 0;
     overflow: hidden;
     background-color: rgba(22, 22, 22, 1);
@@ -93,3 +145,11 @@ ul {
     text-decoration: none;
   }
 
+ .teste{
+  font-size: 0%;
+ }
+
+@media (max-width:1920px) {
+  
+
+}
