@@ -58,9 +58,18 @@ header{
 
   ul li {
       margin: 20px 0;
-      border-style: double;
-      border:10px;
-      border-color: white;
+      
+  }
+
+  ul li a{
+    font-size: 20px;
+    border-style: double;
+    border:10px;
+    border-color: white;
+  }
+
+  #contato{
+    color: ;
   }
 }
 
