@@ -43,6 +43,7 @@ header{
 
   .links.active {
       display: flex; /* Exibe o menu quando ativado */
+      
   }
 
   .menu_icon {
@@ -50,26 +51,36 @@ header{
       
   }
 
+
   ul {
       flex-direction: column;
       width: 100%;
-      text-align: center;
+      text-align: justify;
+      margin-left: 0;
+      height:max-content;
+      
   }
 
   ul li {
-      margin: 20px 0;
+      margin: 0px;
       
   }
 
   ul li a{
     font-size: 20px;
+    text-align: start;
+    border: 10;
+    border-color: rgb(72, 72, 72);
     border-style: double;
-    border:10px;
-    border-color: white;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 30px 0;
+    font-family: 'Righteous',sans-serif;
   }
 
   #contato{
-    color: ;
+    color: rgba(255, 102, 0, 1);
   }
 }
 
