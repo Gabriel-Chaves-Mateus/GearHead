@@ -3,7 +3,6 @@ body{
 }
 
 header{
-    position: relative;
     background-color: rgba(22, 22, 22, 1);
     height: 103px;
 }
@@ -39,8 +38,8 @@ header{
       right: 0;
       width: 100%;
       background-color: rgba(22, 22, 22, 1);
+      height: 100%;
   }
-
   .links.active {
       display: flex; /* Exibe o menu quando ativado */
       
@@ -52,17 +51,18 @@ header{
   }
 
 
-  ul {
+  .menu_aba{
       flex-direction: column;
       width: 100%;
       text-align: justify;
       margin-left: 0;
-      height:max-content;
+      height: 100;
       
   }
 
   ul li {
       margin: 0px;
+      
       
   }
 
