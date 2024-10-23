@@ -3,62 +3,146 @@ body{
 }
 
 header{
-    position: relative;
     background-color: rgba(22, 22, 22, 1);
     height: 103px;
+}
+
+.logo_absolute{
+  position: relative;
 }
 
 .logo {
     width: 103px;
     height: 103px;
-    margin-left: 0%;
+    margin-left: 5%;
     display: flex;
     position: absolute;
 }
 
 .menu_icon{
     display: none;
-    position: absolute;
+    position:absolute;
     margin-left: 80%;
+    
     margin-top: 35px;
     width: 32px;
     height: 30px;
     padding: 0px 0px;
+    background-color: rgba(22, 22, 22, 1);
+    color: white;
+    border: 0;
+    
+}
+
+#menu_icon{
+  width: 35px;
+  height: 35px;
 }
 
 /*---------Menu mobile----------*/
 
-@media (max-width: 834px) {
+@media (max-width: 960px) {
   .links {
       display: none; /* Esconde o menu inicialmente */
-      flex-direction: column;
       position: absolute;
-      top: 60px;
-      right: 0;
+      top: 103px;
+      margin-left: 0;
       width: 100%;
-      background-color: white;
-  }
-
-  .links.active {
-      display: flex; /* Exibe o menu quando ativado */
-  }
-
-  .menu_icon {
-      display: block; /* Exibe o ícone de menu sanduíche */
       
   }
 
-  ul {
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
+  .links.active {
+      display:flex; /* Exibe o menu quando ativado */
   }
+
+  .menu_icon {
+      display:block /* Exibe o ícone de menu sanduíche */
+      
+  }
+  .menu_close{
+      display: block;
+  }
+
+  ul {
+      position: absolute;
+      top:0;
+      flex-direction:column;
+      margin-left: 0;
+      height: 100%;
+      width: 100%;
+     }
 
   ul li {
-      margin: 20px 0;
+      padding: 20px;
+      border-style:double;
+      border-right: 0;
+      width: 100%;
+      border-left: 0;
+      border-top: 0;
+      margin-left: 0;
   }
+
+  ul li a{
+    padding: 30px;
+    text-align: start;
+    font-size: 20;
+    font: 20px;
+    background-color: rgba(22, 22, 22, 1);
+  }
+
+  li#contato{
+    padding: 30px;
+    float:inline-end;
+    text-align: end;
+    background-color: rgba(22, 22, 22, 1);
+  }
+
+  #contato{
+    
+    border-radius: 0;
+    border: 0;
+    border-color: rgba(22, 22, 22, 1);
+    border-style: none;
+  }
+
+  #contato a{
+    color: rgba(255, 102, 0, 1);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
 }
 
+@media (max-width:1920px){
+  ul{
+    position:absolute;
+    top: 25px;
+    width: 70%;
+  }
+
+  ul li{
+    padding: 0px 25px;
+  }
+
+  ul li a{
+    font-size: 20px;
+  }
+
+  #contato{
+    position: relative;
+    border: 5px;
+    border-radius: 15px;
+    border-style:hidden;
+    border-color: rgba(255, 102, 0, 1);
+    background-color: rgba(255, 102, 0, 1);
+  }
+
+  #contato a{
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+  }
+}
 
   /*----------Menu_mobile----------*/
 /*
