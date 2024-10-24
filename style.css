@@ -79,37 +79,29 @@ header{
     font-family: 'Righteous',sans-serif;
   }
 
+  #li_button{
+    position:absolute;
+    float: none;
+  }
+
   #button_contato{
     background-color: rgba(22, 22, 22, 1);
     border-style: none;
+    border-radius: 0;
+    border: 0;
   }
   #contato{
     color: rgba(255, 102, 0, 1);
     border: 0;
     background-color: rgba(22, 22, 22, 1);
-    
+    padding: 0;
   }
 }
 
 
 
-  /*----------Menu_mobile----------*/  
+  /*----------Menu_desktop----------*/  
 
-  
-  
-  
-  li {
-    display: inline;
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
 
  .teste{
   font-size: 0%;
@@ -125,8 +117,43 @@ header{
     background-color: rgba(22, 22, 22, 1);
   }
 
-  #contato{
+  ul li{
+    margin-right: 5%;
+  }
+
+  .a_link:hover{
     color: rgba(255, 102, 0, 1);
+  }
+
+  #li_button{
+    position: relative;
+    float: right;
     
+  }
+  #button_contato{
+    background-color: rgba(255, 102, 0, 1);
+    border-radius: 20px;
+  }
+
+  #contato{
+    font-family: 'Righteous',sans-serif;
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+
+  }
+
+  li {
+    display: inline;
+    float: left;
+  }
+  
+  li .a_link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
   }
 }
