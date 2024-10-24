@@ -15,6 +15,11 @@ header{
     position: absolute;
 }
 
+.logo_footer{
+  width:200px;
+  height: 200px;
+}
+
 .menu_icon{
     display: none;
     position: absolute;
@@ -25,6 +30,13 @@ header{
     padding: 0px 0px;
     border: 0;
     background-color: rgba(22, 22, 22, 1);
+}
+
+.footer{
+  background-color: rgba(22, 22, 22, 1);
+  /* Retirar depois */margin-top: 100%; 
+  width: 100%;
+  height:300px;
 }
 
 /*---------Menu mobile----------*/
@@ -60,7 +72,7 @@ header{
       
   }
 
-  ul li {
+  .menu_aba ul li {
       margin: 0px;
            
   }
@@ -81,20 +93,17 @@ header{
   #li_button{
     position:absolute;
     float: none;
+    margin-top: 20px;
   }
 
-  #button_contato{
-    background-color: rgba(22, 22, 22, 1);
-    border-style: none;
-    border-radius: 0;
-    border: 0;
-  }
-  #contato{
+  #li_button .contato{
     color: rgba(255, 102, 0, 1);
     border: 0;
     background-color: rgba(22, 22, 22, 1);
     padding: 0;
-  }
+    border-style: none;
+    border-radius: 0;
+    }
 }
 
 
@@ -108,7 +117,7 @@ header{
 
 @media (max-width:1920px) {
   
-  ul {
+  .menu_aba ul {
     list-style-type: none;
     margin-left: 30%;
     padding: 20px;
@@ -116,7 +125,7 @@ header{
     background-color: rgba(22, 22, 22, 1);
   }
 
-  ul li{
+  .menu_aba ul li{
     margin-right: 5%;
   }
 
@@ -127,15 +136,13 @@ header{
   #li_button{
     position: relative;
     float: right;
-    
+    margin-top: 12px;
   }
-  #button_contato{
+
+  #li_button .contato{
     background-color: rgba(255, 102, 0, 1);
     border-radius: 20px;
     padding: 8px;
-  }
-
-  #contato{
     font-family: 'Righteous',sans-serif;
     font-size: 25px;
     padding: 10px;
@@ -144,7 +151,7 @@ header{
 
   }
 
-  li {
+  .menu_aba li {
     display: inline;
     float: left;
   }
@@ -157,4 +164,5 @@ header{
     text-decoration: none;
     font-size: 20px;
   }
+
 }
