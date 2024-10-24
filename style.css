@@ -62,11 +62,10 @@ header{
 
   ul li {
       margin: 0px;
-      
-      
+           
   }
 
-  ul li a{
+  ul li .a_link{
     font-size: 25px;
     text-align: start;
     border: 10;
@@ -75,7 +74,7 @@ header{
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    padding: 40px 0;
+    padding: 30px 0;
     font-family: 'Righteous',sans-serif;
   }
 
@@ -133,6 +132,7 @@ header{
   #button_contato{
     background-color: rgba(255, 102, 0, 1);
     border-radius: 20px;
+    padding: 8px;
   }
 
   #contato{
@@ -140,6 +140,7 @@ header{
     font-size: 25px;
     padding: 10px;
     color: white;
+    text-decoration: none;
 
   }
 
