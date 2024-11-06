@@ -1,0 +1,12 @@
+.body_contato{
+    background-color: rgb(35, 35, 35);
+}
+
+.escolha_contato{
+    color: white;
+    display: inline;
+}
+
+.escolha_contato ul{
+    list-style-type: none;
+}
