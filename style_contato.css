@@ -3,10 +3,17 @@
 }
 
 .escolha_contato{
-    color: white;
-    display: inline;
+    margin-top: 80px;
+    display:flex;
+    position: relative;
+    justify-content: space-around; 
 }
 
-.escolha_contato ul{
-    list-style-type: none;
+.escolha_contato a{
+    text-decoration: none;
+    color: white;
+}
+
+.escolha_contato a:hover{
+    color: rgba(255, 102, 0, 1);
 }
