@@ -1,0 +1,172 @@
+.body_menu{
+    margin: 0;
+}
+
+header{
+    background-color: rgba(22, 22, 22, 1);
+    height: 103px;
+}
+
+.logo {
+    width: 103px;
+    height: 103px;
+    margin-left: 5%;
+    display: flex;
+    position: absolute;
+}
+
+.logo_footer{
+  width:150px;
+  height: 150px;
+}
+
+.menu_icon{
+    display: none;
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 32px;
+    width: 32px;
+    height: 32px;
+    padding: 0px 0px;
+    border: 0;
+    background-color: rgba(22, 22, 22, 1);
+}
+
+.footer{
+  background-color: rgba(22, 22, 22, 1);
+  /* Retirar depois */
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-self: flex-end;
+  width: 100%;
+  height:250px;
+}
+
+/*---------Menu mobile----------*/
+
+@media (max-width: 960px) {
+  .links {
+      display: none; /* Esconde o menu inicialmente */
+      flex-direction: column;
+      position: absolute;
+      top: 103px;
+      right: 0;
+      width: 100%;
+      background-color: rgba(22, 22, 22, 1);
+      height: 100%;
+  }
+  .links.active {
+      display: flex; /* Exibe o menu quando ativado */
+      
+  }
+
+  .menu_icon {
+      display: block; /* Exibe o ícone de menu sanduíche */
+      
+  }
+
+
+  .menu_aba{
+      flex-direction: column;
+      width: 100%;
+      text-align: justify;
+      margin-left: 0;
+      height: 100;
+      
+  }
+
+  .menu_aba ul li {
+      margin: 0px;
+           
+  }
+
+  ul li .a_link{
+    font-size: 25px;
+    text-align: start;
+    border: 10;
+    border-color: rgb(72, 72, 72);
+    border-style: double;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 30px 0;
+    font-family: 'Righteous',sans-serif;
+  }
+
+  #li_button{
+    position:absolute;
+    float: none;
+    margin-top: 20px;
+  }
+
+  #li_button .contato{
+    color: rgba(255, 102, 0, 1);
+    border: 0;
+    background-color: rgba(22, 22, 22, 1);
+    padding: 0;
+    border-style: none;
+    border-radius: 0;
+    }
+}
+
+
+
+  /*----------Menu_desktop----------*/  
+
+
+ .teste{
+  font-size: 0%;
+ }
+
+@media (max-width:1920px) {
+  
+  .menu_aba ul {
+    list-style-type: none;
+    margin-left: 30%;
+    padding: 20px;
+    overflow: hidden;
+    background-color: rgba(22, 22, 22, 1);
+  }
+
+  .menu_aba ul li{
+    margin-right: 5%;
+  }
+
+  .a_link:hover{
+    color: rgba(255, 102, 0, 1);
+  }
+
+  #li_button{
+    position: relative;
+    float: right;
+    margin-top: 12px;
+  }
+
+  #li_button .contato{
+    background-color: rgba(255, 102, 0, 1);
+    border-radius: 20px;
+    padding: 8px;
+    font-family: 'Righteous',sans-serif;
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+
+  }
+
+  .menu_aba li {
+    display: inline;
+    float: left;
+  }
+  
+  li .a_link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+}
