@@ -9,15 +9,17 @@ section.container{
 
 .card{
   background-color: rgb(217, 217, 217);
-  width: 50%;
+  width: 60%;
   margin-left: 20%;
   height: 100%;
   border-radius: 2%;
   
 }
+
 .card h1{
   font-family: 'Righteous',sans-serif;
 }
+
 .card button{
   background-color: rgb(255, 102, 0, 1);
   color:white;
@@ -27,11 +29,35 @@ section.container{
   font-family: 'Righteous',sans-serif;
   margin-top: 30%;
 }
+
 .card p{
   font-family: 'Righteous',sans-serif;
   margin-top: 20%;
 }
 
+.tira{
+  background-color: rgb(132, 132, 140);
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+}
+
+.tira button{
+  background-color: rgb(255, 102, 0, 1);
+  color:white;
+  height: 55%;
+  width: 18%;
+  font-size: large;
+  font-family: 'Righteous',sans-serif;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.tira h2{
+  font-family: 'Righteous',sans-serif;
+  color: white;
+  text-align: center;
+}
 
 section.slider{
   margin: 0 auto;
