@@ -40,23 +40,40 @@ section.container{
   margin-top: 4%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .tira button{
   background-color: rgb(255, 102, 0, 1);
   color:white;
-  height: 55%;
-  width: 18%;
-  font-size: large;
+  height: 50px;
+  width: 22%;
+  font-size:  20px;
   font-family: 'Righteous',sans-serif;
   margin-top: 2%;
   margin-left: 2%;
+  
+  
 }
 
 .tira h2{
   font-family: 'Righteous',sans-serif;
   color: white;
   text-align: center;
+}
+
+.ofertas{
+  margin-left: 2%;
+  margin-right: 6%;
+}
+.baixo{
+  background-color:  rgb(217, 217, 217);
+  height: 50%;
+
+}
+
+.ofertas img{
+  width: 300px;
 }
 
 section.slider{
@@ -139,7 +156,7 @@ section.slider{
 }
 
 
-@media screen and (max-width:900px){
+@media screen and (max-width:960px){
   .img-desktop{
     display: none;
   }
