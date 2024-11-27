@@ -76,10 +76,26 @@ section.container{
   width: 300px;
 }
 
-.rodaPe{
+.ofertas a{
+  text-decoration: none;
+  color:black;
+}
+.ofertas p{
+  text-decoration: none;
+  color:black;
+}
+
+.ofertas a:hover{
+  text-decoration: none;
+  color:rgb(255, 102, 0, 1);
+}
+.roda{
   background-color:rgba(22, 22, 22, 1);
-  height: 800px;
+  height: 150px;
   margin-top: 7%;
+  align-items: flex-end;
+}
+.rodaPe{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -91,14 +107,18 @@ section.container{
   height: 103px;
   display: flex;
   position: absolute;
-  margin-top: 780px;
   margin-left: 200px;
+}
+
+.ancora{
+  color:white;
+  text-align: center;
 }
 
 .tit{
   margin: 20px;
   color: white;
-
+  text-decoration:none; 
 }
 
 section.slider{
