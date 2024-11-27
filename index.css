@@ -76,6 +76,31 @@ section.container{
   width: 300px;
 }
 
+.rodaPe{
+  background-color:rgba(22, 22, 22, 1);
+  height: 800px;
+  margin-top: 7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.icon{
+  width: 103px;
+  height: 103px;
+  display: flex;
+  position: absolute;
+  margin-top: 780px;
+  margin-left: 200px;
+}
+
+.tit{
+  margin: 20px;
+  color: white;
+
+}
+
 section.slider{
   margin: 0 auto;
   width: 100%;
