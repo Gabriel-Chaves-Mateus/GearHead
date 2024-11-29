@@ -68,14 +68,23 @@ body{
 .ofertas{
   margin-left: 2%;
   margin-right: 6%;
+
 }
 .baixo{
   background-color:  rgb(217, 217, 217);
   height: 50%;
-
+  
 }
-
-.ofertas img{
+.baixo .ofertaIcon{
+  width: 20%;
+  height: 30%;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3%;
+}
+.ofertas .motos{
   width: 300px;
 }
 
@@ -92,18 +101,7 @@ body{
   text-decoration: none;
   color:rgb(255, 102, 0, 1);
 }
-.roda{
-  background-color:rgba(22, 22, 22, 1);
-  height: 150px;
-  margin-top: 7%;
-  align-items: flex-end;
-}
-.rodaPe{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-}
+
 
 .icon{
   width: 103px;
@@ -123,6 +121,7 @@ body{
   color: white;
   text-decoration:none; 
 }
+
 
 .slider{
   margin: 0 auto;
