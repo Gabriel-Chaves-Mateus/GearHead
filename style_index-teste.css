@@ -1,0 +1,110 @@
+.bloco-botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 50vh;
+    margin: 0;
+    font-family: "Righteous", sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-pag {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10%;
+    background-color: rgb(217, 217, 217);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    width: 50%;
+    min-height: 75%;
+    margin: 25% auto;
+}
+
+.conteudo-pag h2 {
+    font-size: 280%;
+    color: #000;
+}
+
+.bloco-sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(104, 104, 104, 0.459);
+    justify-items: center;
+    align-items: center;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.button-pag {    
+    display: inline-block;
+    background-color: #ff6a00;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+.btn:hover {
+    background-color: #e55b00;
+}
+
+.destaques {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.destaques h1 {
+    font-size: 5vw;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- Responsividade ---------- */
+
+@media all and (max-width: 960px){
+    .bloco-botoes {
+        flex: 2;
+        grid-template-columns: 1fr;
+    }
+
+    .conteudo-pag h2 {
+        font-size: 6vw;
+    }
+
+    .button-pag {
+        font-size: 3vw;
+    }
+
+    .destaques h1 {
+        font-size: 8vw;
+    }
+}
+
+@media all and (max-width: 600px){
+    .bloco-sobre {
+        flex: 2;
+        grid-template-columns: 1fr;
+    }
+
+    .bloco-sobre a {
+        order: 1;
+    }
+
+    .bloco-sobre h2 {
+        order: 2;
+    }
+
+    .destaques h1 {
+        font-size: 10vw;
+    }
+}

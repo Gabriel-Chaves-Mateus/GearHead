@@ -1,0 +1,488 @@
+body{
+  margin:0;
+}
+
+header {
+  margin-top: -20px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #ffff;
+  text-align: center;
+  margin-top: 1%;
+  height: auto;
+  margin-bottom: 10%;
+}
+
+.card{
+  background-color: rgb(217, 217, 217);
+  width: 60%;
+  margin-left: 20%;
+  height: auto;
+  border-radius: 2%;
+  margin-top: 10%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.card h1{
+  font-family: 'Righteous',sans-serif;
+}
+
+.card button{
+  background-color: rgb(255, 102, 0, 1);
+  color:white;
+  height: auto;
+  width: 70%;
+  font-size: large;
+  font-family: 'Righteous',sans-serif;
+  margin-bottom: 3%;
+}
+
+.card p{
+  font-family: 'Righteous',sans-serif;
+  margin-top: 20%;
+}
+
+.tira{
+  background-color: rgb(132, 132, 140);
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 100%;
+}
+
+.tira button{
+  background-color: rgb(255, 102, 0, 1);
+  color:white;
+  height: 50px;
+  width: 200%;
+  font-size:  large;
+  font-family: 'Righteous',sans-serif;
+  margin-top: 10%;
+  font-size: 20px;
+}
+
+.tira h2{
+  font-family: 'Righteous',sans-serif;
+  color: white;
+  text-align: center;
+}
+
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3%;
+}
+
+
+.ofertas a:hover{
+  text-decoration: none;
+  color:rgb(255, 102, 0, 1);
+}
+
+
+.icon{
+  width: 103px;
+  height: 103px;
+  display: flex;
+  position: absolute;
+  margin-left: 200px;
+}
+
+.ancora{
+  color:white;
+  text-align: center;
+}
+
+.tit{
+  margin: 20px;
+  color: white;
+  text-decoration:none; 
+}
+
+
+.slider{
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  padding: 0 !important; /*o !important serve para não criar mais espaços aicionais caso nescissário no mobile ou em telas maiores*/
+  overflow: hidden;/*esconde a barra de rolagem mesmo que o conteudo sai da tela*/
+  margin-top: 5%;
+  border: 10px solid rgba(217, 217, 217, 0.5);
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.slider-content{
+  width: 400%;
+  height: auto;
+  display:flex;
+}
+
+.slider-content input, .img-mobile{
+  display: none;
+  /*esconde as imagens tanto de mobile quando está no tamanho desktop*/
+}
+
+.slide-box{
+  width: 25%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  transition: 1s;
+}
+
+.slide-box img{
+  width:100%;
+}
+
+.nav-manual, .nav-auto{
+  position: absolute;/*usar para que não sobreponha outro elemento na tela*/
+  width: 100%;
+  margin-top: 31%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+  border: 1px solid rgb(255, 102, 0, 1);
+  padding: 10px;
+  border-radius: 50%;/*usamos esse elemento para deixar as bolinhas do carrosel redondas*/
+  cursor: pointer; /*esse elemento faz quando passamos o cursor sobre as bolinhas apareça o dedinho*/
+  transition: 0.2s;
+}
+/*O not:(:last-child), serve para aplicar o estilo para todos menos para o ultimo elemento*/
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+  margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+  background-color:rgb(255, 102, 0, 1);
+}
+/* o ~ indica um evento, nesse caso quando o id radio1 estiver marcado as classes nav-auto e auto-btn1 mudar a vor de fundo*/
+#radio1:checked ~ .nav-auto .auto-btn1{
+  background-color: rgb(255, 102, 0, 1);
+}
+
+#radio2:checked ~ .nav-auto .auto-btn2{
+  background-color: rgb(255, 102, 0, 1);
+}
+
+#radio3:checked ~ .nav-auto .auto-btn3{
+  background-color: rgb(255, 102, 0, 1);
+}
+
+#radio1:checked ~ .primeiro{
+  margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+  margin-left: -50%;
+}
+
+/* ---------- destaque ---------- */
+
+.bloco-destaque {
+  display: grid; /* Ativa o layout em grid */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Define as colunas */
+  gap: 20px;
+}
+
+.bloco_ofertas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10%;
+  background-color: rgb(217, 217, 217);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  align-items: center;
+}
+
+.imagem_ofertas {
+  width: 100%;
+  right: auto;
+}
+
+.bloco_texto{
+  background-color: rgba(104, 104, 104, 0.267);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-height: 250px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 30px;
+  right: auto;
+}
+
+.logo_ducati{
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  width: 100px; 
+  height: auto;
+}
+
+.bloco_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto {
+  text-align: center;
+}
+
+
+@media screen and (max-width:960px){
+  header {
+    margin-top: 0;
+  }
+
+  .img-desktop{
+    display: none;
+  }
+  .img-mobile{
+    display: block;
+  }
+  .nav-auto, .nav-manual{
+    margin-top: 53%;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #ffff;
+    margin: 3%;
+  }
+  .card{
+    background-color: rgb(217, 217, 217);
+    width: 40%;
+    margin-left: 30%;
+    height: 90%;
+    border-radius: 10px;
+    margin-top: 70px;
+  }
+  .card button{
+    background-color: rgb(255, 102, 0, 1);
+    color:white;
+    height: 13%;
+    width: 70%;
+    font-size: large;
+    font-family: 'Righteous',sans-serif;
+  }
+  .card p{
+    font-family: 'Righteous',sans-serif;
+    margin-top: 20%;
+  }
+  .tira h2{
+    font-family: 'Righteous',sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 100%;
+  }
+  .tira button{
+    background-color: rgb(255, 102, 0, 1);
+    color:white;
+    height: 50px;
+    width: 150%;
+    font-size:  large;
+    font-family: 'Righteous',sans-serif;
+    margin-top: 10%;
+    font-size: 20px;
+  }
+
+  .bloco_ofertas {
+    flex: 2;
+    grid-template-columns: 1fr;
+  }
+
+  .imagem_ofertas {
+    order: 1;
+    min-width: 100%;
+  }
+
+  .bloco_texto {
+    order: 2;
+    min-width: 100%;
+    padding: 50px;
+  }
+
+  .titulo {
+    font-size: 7vw;
+  }
+}
+
+@media screen and (max-width:702px){
+  .img-desktop{
+    display: none;
+  }
+  .img-mobile{
+    display: block;
+  }
+  .nav-auto, .nav-manual{
+    margin-top: 53%;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #ffff;
+    margin: 3%;
+  }
+  .card{
+    background-color: rgb(217, 217, 217);
+    width: 60%;
+    margin-left: 20%;
+    height: 90%;
+    border-radius: 2%;
+    margin-top: 70px;
+  }
+  .card button{
+    background-color: rgb(255, 102, 0, 1);
+    color:white;
+    height: 13%;
+    width: 70%;
+    font-size: large;
+    font-family: 'Righteous',sans-serif;
+  }
+  .card p{
+  font-family: 'Righteous',sans-serif;
+  margin-top: 20%;
+}
+.tira h2{
+  font-family: 'Righteous',sans-serif;
+  color: white;
+  text-align: center;
+}
+.tira button{
+  background-color: rgb(255, 102, 0, 1);
+  color:white;
+  height: 50px;
+  width: 150%;
+  font-size:  large;
+  font-family: 'Righteous',sans-serif;
+  margin-top: 10%;
+  font-size: 20px;
+}
+}
+
+@media screen and (max-width:548px){
+  .img-desktop{
+    display: none;
+  }
+  .img-mobile{
+    display: block;
+  }
+  .nav-auto, .nav-manual{
+    margin-top: 50%;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #ffff;
+    margin: 3%;
+    margin-bottom: 20%;
+  }
+  .card{
+    background-color: rgb(217, 217, 217);
+    width: 60%;
+    margin-left: 20%;
+    height: 90%;
+    border-radius: 2%;
+    margin-top: 70px;
+  }
+  .card button{
+    background-color: rgb(255, 102, 0, 1);
+    color:white;
+    height: 13%;
+    width: 70%;
+    font-size: large;
+    font-family: 'Righteous',sans-serif;
+  }
+  .card p{
+  font-family: 'Righteous',sans-serif;
+  margin-top: 20%;
+  }
+  .tira h2{
+    font-family: 'Righteous',sans-serif;
+    color: white;
+    text-align: center;
+    
+  }
+  .tira button{
+    background-color: rgb(255, 102, 0, 1);
+    color:white;
+    height: 50px;
+    width: 120%;
+    font-size:  large;
+    font-family: 'Righteous',sans-serif;
+    margin-top: 10%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:300px){
+  .img-desktop{
+    display: none;
+  }
+  .img-mobile{
+    display: block;
+  }
+  .nav-auto, .nav-manual{
+    margin-top: 48%;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #ffff;
+    margin: 3%;
+    margin-bottom: 20%;
+  }
+  .card{
+    background-color: rgb(217, 217, 217);
+    width: 80%;
+    margin-left: 20%;
+    height: 90%;
+    border-radius: 2%;
+    margin-top: 70px;
+  }
+  .card button{
+    background-color: rgb(255, 102, 0, 1);
+    color:white;
+    height: 13%;
+    width: 70%;
+    font-size: large;
+    font-family: 'Righteous',sans-serif;
+  }
+  .card p{
+  font-family: 'Righteous',sans-serif;
+  margin-top: 20%;
+  }
+  .tira h2{
+    font-family: 'Righteous',sans-serif;
+    color: white;
+    text-align: center;
+    
+  }
+  .tira button{
+    background-color: rgb(255, 102, 0, 1);
+    color:white;
+    height: 50px;
+    width: 120%;
+    font-size:  large;
+    font-family: 'Righteous',sans-serif;
+    margin-top: 10%;
+    font-size: 20px;
+  }
+}
+

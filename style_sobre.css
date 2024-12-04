@@ -1,0 +1,139 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: rgba(22, 22, 22, 1);
+    margin: 0;
+    padding: 0;
+    color: rgba(22, 22, 22, 1);
+}
+
+.container {
+padding: 10px;
+background-color: rgba(22,22,22,1);
+}
+
+.bloco_sobre {
+    align-items: center;
+    display:grid;
+    background-color: white;
+    grid-template-columns: 1fr 1fr;
+}
+
+.texto_sobre {
+    text-align: left;
+    max-width: 100%;
+    padding: 2%;
+    height: auto;
+    align-items: center;
+    min-width: 100px;
+}
+
+.logo_catolica_sobre{
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.titulo_sobre{
+    color: rgb(0, 0, 0);
+    font-size: 3vw;
+}
+
+.paragrafo_sobre{
+    color: rgb(0, 0, 0);
+    font-size: 2vw;
+}
+
+.bloco_objetivo{
+    align-items: center;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo_moto{
+    align-items: center;
+    width: 70%;
+    height: auto;
+}
+
+.titulo_objetivo{
+    font-size: 3vw;
+    color: white;
+}
+
+.paragrafo_objetivo{
+    font-size: 2vw;
+    color: white;
+}
+
+.bloco_alerta{
+    width: 100%;
+    height: auto;
+}
+
+
+@media all and (max-width: 768px){
+    .bloco_sobre{
+        flex: 2;
+        grid-template-columns: 1fr;
+    }
+
+    .texto_sobre{
+        order: initial ;
+        min-width: 100%;
+    }
+
+    .titulo_sobre{
+        font-size: 5vw;
+    }
+
+    .paragrafo_sobre{
+        font-size: 4vw;
+    }
+
+    .logo_catolica_sobre{
+        order: 2;
+        min-width: 100%;
+    }
+
+    .bloco_objetivo{
+        flex: 2;
+        grid-template-columns: 1fr;
+        min-width: 100%;
+    }
+
+    .titulo_objetivo{
+        font-size: 5vw;
+    }
+
+    .paragrafo_objetivo{
+        font-size: 4vw;
+    }
+
+    .bloco_alerta{
+        flex: 2;
+        grid-template-columns: 1fr;
+        min-width: 100%;
+    }
+
+
+}
+
+@media all and (max-width: 412px){
+    .bloco_sobre{
+        font-size: 3vw;
+    }
+
+    .paragrafo_sobre{
+        font-size: 2vw;
+    }
+
+    .titulo_objetivo{
+        font-size: 3vw;
+    }
+
+    .paragrafo_objetivo{
+        font-size: 5vw;
+    }
+}

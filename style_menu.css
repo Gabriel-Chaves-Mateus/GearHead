@@ -1,11 +1,20 @@
 .body_menu{
     margin: 0;
+    z-index: 1;
+    position: relative;
+    background-color: rgb(14, 14, 14);
 }
 
+
+
 header{
-    background-color: rgba(22, 22, 22, 1);
+    background-color: rgb(14, 14, 14);
     height: 103px;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
+
+
 
 .logo {
     width: 103px;
@@ -31,11 +40,11 @@ header{
     height: 32px;
     padding: 0px 0px;
     border: 0;
-    background-color: rgba(22, 22, 22, 1);
+    background-color: rgb(14, 14, 14);
 }
 
 .footer{
-  background-color: rgba(22, 22, 22, 1);
+  background-color: rgb(14, 14, 14);
   /* Retirar depois */
   /* display: flex;
   justify-content: flex-end;
@@ -68,14 +77,16 @@ header{
       display: none; /* Esconde o menu inicialmente */
       flex-direction: column;
       position: absolute;
-      top: 103px;
+      top: 83px;
       right: 0;
       width: 100%;
-      background-color: rgba(22, 22, 22, 1);
-      height: 100%;
+      background-color: rgb(14, 14, 14);
+      height: auto;
+      z-index: 9999;
   }
   .links.active {
       display: flex; /* Exibe o menu quando ativado */
+      background-color: rgb(14, 14, 14, 0.9);
       
   }
 
@@ -91,41 +102,43 @@ header{
       text-align: justify;
       margin-left: 0;
       height: 100;
-      
   }
 
   .menu_aba ul li {
       margin: 0px;
-           
   }
 
   ul li .a_link{
     font-size: 25px;
     text-align: start;
     border: 10;
-    border-color: rgb(72, 72, 72);
+    border-color: rgb(14, 14, 14);
     border-style: double;
     border-top: 0;
     border-left: 0;
     border-right: 0;
     padding: 30px 0;
     font-family: 'Righteous',sans-serif;
+    text-align: center;
   }
 
   #li_button{
     position:absolute;
     float: none;
     margin-top: 20px;
+    background-color: rgb(14, 14, 14, 0.8);
   }
 
   #li_button a.contato{
     color: rgba(255, 102, 0, 1);
-    background-color: rgba(22, 22, 22, 1);
+    background-color: rgb(14, 14, 14, 0.8);
     border-radius: 20px;
-    padding: 0px;
+    padding: 14px 16px;
     font-family: 'Righteous',sans-serif;
     font-size: 25px;
     text-decoration: none;
+    text-align: center;
+    display: block;
     
     }
 
@@ -151,9 +164,11 @@ header{
   .menu_aba ul {
     list-style-type: none;
     margin-left: 30%;
-    padding: 20px;
+    padding: 0px;
     overflow: hidden;
-    background-color: rgba(22, 22, 22, 1);
+    background-color: rgb(14, 14, 14);
+    margin-top: 20px;
+    font-family: 'Righteous',sans-serif;
   }
 
   .menu_aba ul li{
@@ -193,7 +208,7 @@ header{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
   }
 
 }
